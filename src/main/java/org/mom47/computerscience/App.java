@@ -6,8 +6,10 @@ package org.mom47.computerscience;
  */
 public class App 
 {
+    public static String message = "Rome is a good guy!";
+
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println(message);
     }
 }
