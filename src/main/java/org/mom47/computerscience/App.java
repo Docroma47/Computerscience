@@ -96,28 +96,28 @@ public class App
 
 
 
-		public void main(String[] args) {
-			App peremenie = new App();
-			peremenie.setMessage("POLiCE!Hands up!");
-			peremenie.setIntVariable(12);
-			peremenie.setLongVariable(4500);
-			peremenie.setBooleanVariable1(true);
-			peremenie.setBooleanVariable2(false);
-			peremenie.setDoubleVariable1(-2.02);
-			peremenie.setDoubleVariable2(-2.023);
-			peremenie.setFloatVariable(13.1213f);
-			peremenie.setCharVariable('a');
-			peremenie.setShortVariable((short) 100);
-			System.out.println(peremenie.getFloatVariable());
-			System.out.println(peremenie.getDoublevariable1());
-			System.out.println(peremenie.getDoublevariable2());
-			System.out.println(peremenie.getMessage());
-			System.out.println(peremenie.getIntVariable());
-			System.out.println(peremenie.getLongVariable());
-			System.out.println(peremenie.getBooleanVariable1());
-			System.out.println(peremenie.getBooleanVariable2());
-			System.out.println(peremenie.getCharvariable());
-			System.out.println(peremenie.getShortVariable());
+		public static void main(String[] args) {
+			App app = new App();
+			app.setMessage("POLiCE!Hands up!");
+			app.setIntVariable(12);
+			app.setLongVariable(4500);
+			app.setBooleanVariable1(true);
+			app.setBooleanVariable2(false);
+			app.setDoubleVariable1(-2.02);
+			app.setDoubleVariable2(-2.023);
+			app.setFloatVariable(13.1213f);
+			app.setCharVariable('a');
+			app.setShortVariable((short) 100);
+			System.out.println(app.getFloatVariable());
+			System.out.println(app.getDoublevariable1());
+			System.out.println(app.getDoublevariable2());
+			System.out.println(app.getMessage());
+			System.out.println(app.getIntVariable());
+			System.out.println(app.getLongVariable());
+			System.out.println(app.getBooleanVariable1());
+			System.out.println(app.getBooleanVariable2());
+			System.out.println(app.getCharvariable());
+			System.out.println(app.getShortVariable());
 
 		}
 
