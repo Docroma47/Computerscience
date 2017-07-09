@@ -37,8 +37,8 @@ public class App
 			return longVariable;
 		}
 
-		public void setCharVariable(char c) {
-			this.charVariable = c;
+		public void setCharVariable(char a) {
+			this.charVariable = a;
 		}
 
 		public long getCharvariable() {
@@ -77,8 +77,8 @@ public class App
 			return booleanVariable2;
 		}
 
-		public void setShortVariable(short sh) {
-			this.shortVariable = sh;
+		public void setShortVariable(short  s) {
+			this.shortVariable = s;
 		}
 
 		public short getShortVariable() {
@@ -103,22 +103,21 @@ public class App
 			peremenie.setLongVariable(4500);
 			peremenie.setBooleanVariable1(true);
 			peremenie.setBooleanVariable2(false);
-
-
-			System.out.println(peremenie.getLongVariable());
-
-
 			peremenie.setDoubleVariable1(-2.02);
 			peremenie.setDoubleVariable2(-2.023);
 			peremenie.setFloatVariable(13.1213f);
-			peremenie.getFloatVariable();
-			peremenie.getDoublevariable1();
-			peremenie.getDoublevariable2();
-			peremenie.getMessage();
-			peremenie.getIntVariable();
-			peremenie.getLongVariable();
-			peremenie.getBooleanVariable1();
-			peremenie.getBooleanVariable2();
+			peremenie.setCharVariable('a');
+			peremenie.setShortVariable((short) 100);
+			System.out.println(peremenie.getFloatVariable());
+			System.out.println(peremenie.getDoublevariable1());
+			System.out.println(peremenie.getDoublevariable2());
+			System.out.println(peremenie.getMessage());
+			System.out.println(peremenie.getIntVariable());
+			System.out.println(peremenie.getLongVariable());
+			System.out.println(peremenie.getBooleanVariable1());
+			System.out.println(peremenie.getBooleanVariable2());
+			System.out.println(peremenie.getCharvariable());
+			System.out.println(peremenie.getShortVariable());
 
 		}
 
