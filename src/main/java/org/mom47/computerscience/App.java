@@ -20,12 +20,24 @@ public class App
 	public static float floatVariable = 0.6861f;
 
     public static void main(String[] args) {
+		App app = new App();
+		app.printInt();
     	// создать экземпляр (объект) класса App
 		// вызвать у объекта функцию printInt
     }
 
 	public void printInt() {
+		System.out.println(message);
 		System.out.println(intVariable);
+		System.out.println(longVariable);
+		System.out.println(charVariable);
+		System.out.println(booleanVariable1);
+		System.out.println(booleanVariable2);
+		System.out.println(shortVariable);
+		System.out.println(doubleVariable1);
+		System.out.println(doubleVariable2);
+		System.out.println(floatVariable);
+
 	}
 
 	// Добавить новые функции для каждой переменной, каждая из которой выводит на консоль свою переменную (пример printInt)
