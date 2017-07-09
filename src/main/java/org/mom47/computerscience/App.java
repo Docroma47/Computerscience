@@ -18,17 +18,16 @@ public class App
 	public static double doubleVariable1 = 0.42;
 	public static double doubleVariable2 = -0.85;
 	public static float floatVariable = 0.6861f;
-    public static void main( String[] args )
-    {
-        System.out.println(message);
-	System.out.println(intVariable);
-	System.out.println(longVariable);
-	System.out.println(charVariable);
-	System.out.println(booleanVariable1);
-	System.out.println(booleanVariable2);
-	System.out.println(shortVariable);
-	System.out.println(doubleVariable1);
-	System.out.println(doubleVariable2);
-	System.out.println(floatVariable);
+
+    public static void main(String[] args) {
+    	// создать экземпляр (объект) класса App
+		// вызвать у объекта функцию printInt
     }
+
+	public void printInt() {
+		System.out.println(intVariable);
+	}
+
+	// Добавить новые функции для каждой переменной, каждая из которой выводит на консоль свою переменную (пример printInt)
+	// Назвать каждую функцию в соответствии с именем переменной (см пример printInt)
 }
