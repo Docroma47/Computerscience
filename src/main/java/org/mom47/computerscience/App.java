@@ -9,7 +9,7 @@ public class App
 
     public static String message = "Rome is a good guy!";
 	public static int intVariable = 1;
-	
+
 	public static long longVariable = 120;
 	public static char charVariable = 2;
 	public static boolean booleanVariable1 = true;
