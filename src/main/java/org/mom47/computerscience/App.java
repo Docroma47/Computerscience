@@ -2,21 +2,19 @@ package org.mom47.computerscience;
 
 public class App
 {
-		private String message = "Rome is a good guy!";
-		private int intVariable = 1;
-		private long longVariable = 120;
-		private char charVariable = 2;
-		private boolean booleanVariable1 = true;
-		private boolean booleanVariable2 = false;
-		private short shortVariable = 55;
-		private double doubleVariable1 = 0.42;
-		private double doubleVariable2 = -0.85;
-		private float floatVariable = 0.6861f;
+	private String message = "Rome is a good guy!";
+	private int intVariable = 1;
+	private long longVariable = 120;
+	private char charVariable = 2;
+	private boolean booleanVariable1 = true;
+	private boolean booleanVariable2 = false;
+	private short shortVariable = 55;
+	private double doubleVariable1 = 0.42;
+	private double doubleVariable2 = -0.85;
+	private float floatVariable = 0.6861f;
 
-
-
-		public void setMessage(String text) {
-			this.message = text;
+		public void setMessage(String text){
+		this.message = text;
 		}
 
 		public String getMessage() {
@@ -95,36 +93,24 @@ public class App
 			return floatVariable;
 		}
 
-
 		private void calculate() {
 			IntCalculator calculator  = new IntCalculator();
-				calculator.add(15);
-				calculator.subtract(5);
-				calculator.divide(2);
-				calculator.multiplys(9);
+			calculator.add(15);
+			calculator.subtract(5);
+			calculator.divide(2);
+			calculator.multiplys(9);
 		}
 
-				private  void calculateDays() {
-					IntCalculator daysInJuly;
-					IntCalculator daysInAugust;
-				}
-
-
-
+		private  void calculateDays() {
+			IntCalculator daysInJuly;
+				IntCalculator daysInAugust;
+		}
+	
 		public static void main(String[] args) {
-				IntCalculator calculater  = new IntCalculator();
+			IntCalculator calculater  = new IntCalculator();
 			App app = new App();
 			app.calculate();
 			System.out.println(calculater.getValue());
-
-
-
-			// Создай новый метод в классе App где ты будешь практиковаться с калькулятором. Вызывай его тут, типа
-			// app.calculate();
-			// Так удобнее и красивее будет
-			// Не вижу где результат выводится на консоль, метод getValue совсем не используется
-			// Вызов каждого метода обычно ставится на новой строке, зачем слепил все методы на одной строке?
-
 			app.setMessage("POLiCE!Hands up!");
 			app.setIntVariable(12);
 			app.setLongVariable(4500);
@@ -146,7 +132,4 @@ public class App
 			System.out.println(app.getCharvariable());
 			System.out.println(app.getShortVariable());
 			}
-
-
-
 }
