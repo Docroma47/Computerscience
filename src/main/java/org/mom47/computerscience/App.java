@@ -101,6 +101,13 @@ public class App
 			intCalculator calculator = new intCalculator();
 			System.out.println(calculator.getValue()); calculator.Add(15)/*сложение*/;
 			calculator.Subtract(5)/*вычетание*/;calculator.Multiply(9)/*умножение*/;calculator.Divide(2)/*деление*/;
+
+			// Создай новый метод в классе App где ты будешь практиковаться с калькулятором. Вызывай его тут, типа
+			// app.calculate();
+			// Так удобнее и красивее будет
+			// Не вижу где результат выводится на консоль, метод getValue совсем не используется
+			// Вызов каждого метода обычно ставится на новой строке, зачем слепил все методы на одной строке?
+
 			app.setMessage("POLiCE!Hands up!");
 			app.setIntVariable(12);
 			app.setLongVariable(4500);
