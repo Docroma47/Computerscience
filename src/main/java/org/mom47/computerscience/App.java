@@ -98,6 +98,9 @@ public class App
 
 		public static void main(String[] args) {
 			App app = new App();
+			intCalculator calculator = new intCalculator();
+			System.out.println(calculator.getValue()); calculator.Add(15)/*сложение*/;
+			calculator.Subtract(5)/*вычетание*/;calculator.Multiply(9)/*умножение*/;calculator.Divide(2)/*деление*/;
 			app.setMessage("POLiCE!Hands up!");
 			app.setIntVariable(12);
 			app.setLongVariable(4500);
