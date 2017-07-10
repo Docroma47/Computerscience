@@ -104,11 +104,14 @@ public class App
 				calculator.multiplys(9);
 		}
 
+						private  void calculateDays(){
+						}
+
 		public static void main(String[] args) {
-			IntCalculator calculator  = new IntCalculator();
+				IntCalculator calculater  = new IntCalculator();
 			App app = new App();
 			app.calculate();
-			System.out.println(calculator.getValue());
+			System.out.println(calculater.getValue());
 
 
 
