@@ -13,83 +13,83 @@ public class App
 	private double doubleVariable2 = -0.85;
 	private float floatVariable = 0.6861f;
 
-		public void setMessage(String text){
+	public void setMessage(String text){
 		this.message = text;
 		}
 
-		public String getMessage() {
+	public String getMessage() {
 			return message;
 		}
 
-		public void setIntVariable(int i) {
+	public void setIntVariable(int i) {
 			this.intVariable = i;
 		}
 
-		public int getIntVariable() {
+	public int getIntVariable() {
 			return intVariable;
 		}
 
-		public void setLongVariable(long l) {
+	public void setLongVariable(long l) {
 			this.longVariable = l;
 		}
 
-		public long getLongVariable() {
+	public long getLongVariable() {
 			return longVariable;
 		}
 
-		public void setCharVariable(char a) {
+	public void setCharVariable(char a) {
 			this.charVariable = a;
 		}
 
-		public long getCharvariable() {
+	public long getCharvariable() {
 			return charVariable;
 		}
 
-		public void setDoubleVariable1(double d1) {
+	public void setDoubleVariable1(double d1) {
 			this.doubleVariable1 = d1;
 		}
 
-		public double getDoublevariable1() {
+	public double getDoublevariable1() {
 			return doubleVariable1;
 		}
 
-		public void setDoubleVariable2(double d2) {
+	public void setDoubleVariable2(double d2) {
 			this.doubleVariable2 = d2;
 		}
 
-		public double getDoublevariable2() {
+	public double getDoublevariable2() {
 			return doubleVariable2;
 		}
 
-		public void setBooleanVariable1(boolean b1) {
+	public void setBooleanVariable1(boolean b1) {
 			this.booleanVariable1 = b1;
 		}
 
-		public boolean getBooleanVariable1() {
+	public boolean getBooleanVariable1() {
 			return booleanVariable1;
 		}
 
-		public void setBooleanVariable2(boolean b2) {
+	public void setBooleanVariable2(boolean b2) {
 			this.booleanVariable2 = b2;
 		}
 
-		public boolean getBooleanVariable2() {
+	public boolean getBooleanVariable2() {
 			return booleanVariable2;
 		}
 
-		public void setShortVariable(short  s) {
+	public void setShortVariable(short  s) {
 			this.shortVariable = s;
 		}
 
-		public short getShortVariable() {
+	public short getShortVariable() {
 			return shortVariable;
 		}
 
-		public void setFloatVariable(float f) {
+	public void setFloatVariable(float f) {
 			this.floatVariable = f;
 		}
 
-		public float getFloatVariable() {
+	public float getFloatVariable() {
 			return floatVariable;
 		}
 
@@ -105,7 +105,7 @@ public class App
 			IntCalculator daysInJuly;
 				IntCalculator daysInAugust;
 		}
-	
+
 		public static void main(String[] args) {
 			IntCalculator calculater  = new IntCalculator();
 			App app = new App();
@@ -131,5 +131,5 @@ public class App
 			System.out.println(app.getBooleanVariable2());
 			System.out.println(app.getCharvariable());
 			System.out.println(app.getShortVariable());
-			}
+		}
 }
