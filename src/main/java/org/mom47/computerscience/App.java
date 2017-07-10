@@ -13,6 +13,8 @@ public class App
 		private double doubleVariable2 = -0.85;
 		private float floatVariable = 0.6861f;
 
+
+
 		public void setMessage(String text) {
 			this.message = text;
 		}
@@ -94,13 +96,21 @@ public class App
 		}
 
 
-
+		private void calculate() {
+			IntCalculator calculator  = new IntCalculator();
+				calculator.add(15);
+				calculator.subtract(5);
+				calculator.divide(2);
+				calculator.multiplys(9);
+		}
 
 		public static void main(String[] args) {
+			IntCalculator calculator  = new IntCalculator();
 			App app = new App();
-			intCalculator calculator = new intCalculator();
-			System.out.println(calculator.getValue()); calculator.Add(15)/*сложение*/;
-			calculator.Subtract(5)/*вычетание*/;calculator.Multiply(9)/*умножение*/;calculator.Divide(2)/*деление*/;
+			app.calculate();
+			System.out.println(calculator.getValue());
+
+
 
 			// Создай новый метод в классе App где ты будешь практиковаться с калькулятором. Вызывай его тут, типа
 			// app.calculate();
@@ -128,7 +138,8 @@ public class App
 			System.out.println(app.getBooleanVariable2());
 			System.out.println(app.getCharvariable());
 			System.out.println(app.getShortVariable());
+			}
 
-		}
+
 
 }
