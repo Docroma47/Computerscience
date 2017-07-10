@@ -104,8 +104,12 @@ public class App
 				calculator.multiplys(9);
 		}
 
-						private  void calculateDays(){
-						}
+				private  void calculateDays() {
+					IntCalculator daysInJuly;
+					IntCalculator daysInAugust;
+				}
+
+
 
 		public static void main(String[] args) {
 				IntCalculator calculater  = new IntCalculator();
