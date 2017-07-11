@@ -103,6 +103,14 @@ public class App {
 	private void calculateDays() {
 		IntCalculator daysInJuly;
 		IntCalculator daysInJune;
+		daysInJuly = new IntCalculator();
+		daysInJune = new IntCalculator();
+
+		daysInJune.add(30);
+		daysInJuly.add(31);
+
+		System.out.println("Days in June: " + daysInJune.getValue());
+		System.out.println("Days in July: " + daysInJuly.getValue());
 	}
 
 	public static void main(String[] args) {
