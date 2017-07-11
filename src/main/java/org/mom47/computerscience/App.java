@@ -101,8 +101,8 @@ public class App {
 	}
 
 	private void calculateDays() {
-			IntCalculator daysInJuly;
-			IntCalculator daysInJune;
+		IntCalculator daysInJuly;
+		IntCalculator daysInJune;
 	}
 
 	public static void main(String[] args) {
