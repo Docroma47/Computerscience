@@ -101,34 +101,12 @@ public class App {
 	}
 
 	private void calculateDays() {
-		IntCalculator daysInJuly;
-		IntCalculator daysInAugust;
+			IntCalculator daysInJuly;
+			IntCalculator daysInJune;
 	}
 
 	public static void main(String[] args) {
-		IntCalculator calculater = new IntCalculator();
-		App app=new App();
-		app.calculate();
-		System.out.println(calculater.getValue());
-		app.setMessage("POLiCE!Hands up!");
-		app.setIntVariable(12);
-		app.setLongVariable(4500);
-		app.setBooleanVariable1(true);
-		app.setBooleanVariable2(false);
-		app.setDoubleVariable1(-2.02);
-		app.setDoubleVariable2(-2.023);
-		app.setFloatVariable(13.1213f);
-		app.setCharVariable('a');
-		app.setShortVariable((short) 100);
-		System.out.println(app.getFloatVariable());
-		System.out.println(app.getDoublevariable1());
-		System.out.println(app.getDoublevariable2());
-		System.out.println(app.getMessage());
-		System.out.println(app.getIntVariable());
-		System.out.println(app.getLongVariable());
-		System.out.println(app.getBooleanVariable1());
-		System.out.println(app.getBooleanVariable2());
-		System.out.println(app.getCharvariable());
-		System.out.println(app.getShortVariable());
+		App app = new App();
+		app.calculateDays();
 	}
 }
