@@ -1,7 +1,6 @@
 package org.mom47.computerscience;
 
-public class App
-{
+public class App {
 	private String message = "Rome is a good guy!";
 	private int intVariable = 1;
 	private long longVariable = 120;
@@ -107,8 +106,8 @@ public class App
 	}
 
 	public static void main(String[] args) {
-		IntCalculator calculater  = new IntCalculator();
-		App app = new App();
+		IntCalculator calculater = new IntCalculator();
+		App app=new App();
 		app.calculate();
 		System.out.println(calculater.getValue());
 		app.setMessage("POLiCE!Hands up!");
