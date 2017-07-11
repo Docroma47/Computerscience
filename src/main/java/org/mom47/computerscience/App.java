@@ -90,46 +90,46 @@ public class App
 	}
 
 	public float getFloatVariable() {
-			return floatVariable;
+		return floatVariable;
 	}
 
 		private void calculate() {
-			IntCalculator calculator  = new IntCalculator();
+			IntCalculator calculator = new IntCalculator();
 			calculator.add(15);
 			calculator.subtract(5);
 			calculator.divide(2);
 			calculator.multiplys(9);
 		}
 
-		private  void calculateDays() {
-			IntCalculator daysInJuly;
+			private  void calculateDays() {
+				IntCalculator daysInJuly;
 				IntCalculator daysInAugust;
-		}
+			}
 
-		public static void main(String[] args) {
-			IntCalculator calculater  = new IntCalculator();
-			App app = new App();
-			app.calculate();
-			System.out.println(calculater.getValue());	
-			app.setMessage("POLiCE!Hands up!");
-			app.setIntVariable(12);
-			app.setLongVariable(4500);
-			app.setBooleanVariable1(true);
-			app.setBooleanVariable2(false);
-			app.setDoubleVariable1(-2.02);
-			app.setDoubleVariable2(-2.023);
-			app.setFloatVariable(13.1213f);
-			app.setCharVariable('a');
-			app.setShortVariable((short) 100);
-			System.out.println(app.getFloatVariable());
-			System.out.println(app.getDoublevariable1());
-			System.out.println(app.getDoublevariable2());
-			System.out.println(app.getMessage());
-			System.out.println(app.getIntVariable());
-			System.out.println(app.getLongVariable());
-			System.out.println(app.getBooleanVariable1());
-			System.out.println(app.getBooleanVariable2());
-			System.out.println(app.getCharvariable());
-			System.out.println(app.getShortVariable());
-		}
+				public static void main(String[] args) {
+					IntCalculator calculater  = new IntCalculator();
+					App app = new App();
+					app.calculate();
+					System.out.println(calculater.getValue());
+					app.setMessage("POLiCE!Hands up!");
+					app.setIntVariable(12);
+					app.setLongVariable(4500);
+					app.setBooleanVariable1(true);
+					app.setBooleanVariable2(false);
+					app.setDoubleVariable1(-2.02);
+					app.setDoubleVariable2(-2.023);
+					app.setFloatVariable(13.1213f);
+					app.setCharVariable('a');
+					app.setShortVariable((short) 100);
+					System.out.println(app.getFloatVariable());
+					System.out.println(app.getDoublevariable1());
+					System.out.println(app.getDoublevariable2());
+					System.out.println(app.getMessage());
+					System.out.println(app.getIntVariable());
+					System.out.println(app.getLongVariable());
+					System.out.println(app.getBooleanVariable1());
+					System.out.println(app.getBooleanVariable2());
+					System.out.println(app.getCharvariable());
+					System.out.println(app.getShortVariable());
+				}
 }
