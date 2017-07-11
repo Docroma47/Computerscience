@@ -4,8 +4,7 @@ package org.mom47.computerscience;
  * Calculator
  */
 
-public class IntCalculator
-{
+public class IntCalculator {
     private int value ;
 
     public void add (int addition) {
@@ -27,5 +26,4 @@ public class IntCalculator
     public int getValue() {
         return value;
     }
-
 }

@@ -99,11 +99,58 @@ public class App {
 		calculator.subtract(5);
 		calculator.divide(2);
 		calculator.multiplys(9);
-		System.out.println("((((0+15)-5)/2)*9)="+calculator.getValue());
+		System.out.println("((((0+15)-5)/2)*9)= " + calculator.getValue());
+	}
+
+	private void calculateDays() {
+		IntCalculator daysInJuly;
+		IntCalculator daysInJune;
+		daysInJuly = new IntCalculator();
+		daysInJune = new IntCalculator();
+
+		daysInJune.add(30);
+		daysInJuly.add(31);
+		daysInJuly = daysInJune;
+
+		System.out.println("Days in June: " + daysInJune.getValue());
+		System.out.println("Days in July: " + daysInJuly.getValue());
+	}
+
+	private void calculateHoursAndDayAprilMarch() {
+		IntCalculator hoursInApril;
+		IntCalculator hoursInMarch;
+		IntCalculator daysInApril;
+		IntCalculator daysInMarch;
+		IntCalculator hoursInTotalAprilMarch;
+		hoursInTotalAprilMarch = new IntCalculator();
+		hoursInApril = new IntCalculator();
+		hoursInMarch = new IntCalculator();
+		daysInApril = new IntCalculator();
+		daysInMarch = new IntCalculator();
+
+		daysInApril.add(30);
+		daysInMarch.add(31);
+
+		System.out.println("Days in April: " + daysInApril.getValue());
+		System.out.println("Days in March: " + daysInMarch.getValue());
+
+		hoursInApril.add(30);
+		hoursInApril.multiplys(24);
+		hoursInMarch.add(31);
+		hoursInMarch.multiplys(24);
+
+		System.out.println("Hours in April: " + hoursInApril.getValue());
+		System.out.println("Hours im March: " + hoursInMarch.getValue());
+
+		hoursInTotalAprilMarch.add(hoursInApril.getValue() + hoursInMarch.getValue());
+
+		System.out.println("Total hours in March and April: " + hoursInTotalAprilMarch.getValue());
 	}
 
 	public static void main(String[] args) {
 		App app=new App();
+		app.calculateHoursAndDayAprilMarch();
+		app.calculateDays();
 		app.calculate();
 		app.setMessage("POLiCE!Hands up!");
 		app.setIntVariable(12);
