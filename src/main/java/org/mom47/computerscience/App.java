@@ -12,7 +12,7 @@ public class App {
 	private double doubleVariable2 = -0.85;
 	private float floatVariable = 0.6861f;
 
-	public void setMessage(String text){
+	public void setMessage(String text) {
 		this.message = text;
 	}
 
@@ -100,7 +100,7 @@ public class App {
 		calculator.multiplys(9);
 	}
 
-	private  void calculateDays() {
+	private void calculateDays() {
 		IntCalculator daysInJuly;
 		IntCalculator daysInAugust;
 	}
