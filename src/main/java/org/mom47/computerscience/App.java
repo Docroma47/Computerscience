@@ -18,75 +18,75 @@ public class App
 	}
 
 	public String getMessage() {
-			return message;
+		return message;
 	}
 
 	public void setIntVariable(int i) {
-			this.intVariable = i;
+		this.intVariable = i;
 	}
 
 	public int getIntVariable() {
-			return intVariable;
+		return intVariable;
 	}
 
 	public void setLongVariable(long l) {
-			this.longVariable = l;
+		this.longVariable = l;
 	}
 
 	public long getLongVariable() {
-			return longVariable;
+		return longVariable;
 	}
 
 	public void setCharVariable(char a) {
-			this.charVariable = a;
+		this.charVariable = a;
 	}
 
 	public long getCharvariable() {
-			return charVariable;
+		return charVariable;
 	}
 
 	public void setDoubleVariable1(double d1) {
-			this.doubleVariable1 = d1;
+		this.doubleVariable1 = d1;
 	}
 
 	public double getDoublevariable1() {
-			return doubleVariable1;
+		return doubleVariable1;
 	}
 
 	public void setDoubleVariable2(double d2) {
-			this.doubleVariable2 = d2;
+		this.doubleVariable2 = d2;
 	}
 
 	public double getDoublevariable2() {
-			return doubleVariable2;
+		return doubleVariable2;
 	}
 
 	public void setBooleanVariable1(boolean b1) {
-			this.booleanVariable1 = b1;
+		this.booleanVariable1 = b1;
 	}
 
 	public boolean getBooleanVariable1() {
-			return booleanVariable1;
+		return booleanVariable1;
 	}
 
 	public void setBooleanVariable2(boolean b2) {
-			this.booleanVariable2 = b2;
+		this.booleanVariable2 = b2;
 	}
 
 	public boolean getBooleanVariable2() {
-			return booleanVariable2;
+		return booleanVariable2;
 	}
 
 	public void setShortVariable(short  s) {
-			this.shortVariable = s;
+		this.shortVariable = s;
 	}
 
 	public short getShortVariable() {
-			return shortVariable;
+		return shortVariable;
 	}
 
 	public void setFloatVariable(float f) {
-			this.floatVariable = f;
+		this.floatVariable = f;
 	}
 
 	public float getFloatVariable() {
