@@ -28,12 +28,11 @@ public class App {
 		System.out.println("Hours im March: " + hoursInMarch.getValue());
 		hoursInTotalAprilMarch.add(hoursInApril.getValue() + hoursInMarch.getValue());
 		System.out.println("Total hours in March and April: " + hoursInTotalAprilMarch.getValue());
-
 	}
 
 	public static void main(String[] args) {
 		IntCalculator calculate = new IntCalculator(36);
-		calculate.polyfunction(14, 30,5,4);
-		System.out.println("Polyfunction result: "+ calculate.getValue());
+		calculate.polyfunction(14,30,5,4);
+		System.out.println("Polyfunction result: " + calculate.getValue());
 	}
 }

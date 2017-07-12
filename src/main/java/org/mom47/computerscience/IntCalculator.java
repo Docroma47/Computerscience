@@ -7,18 +7,19 @@ package org.mom47.computerscience;
 public class IntCalculator {
     private int value;
 
-    IntCalculator (int value) {
+    IntCalculator(int value) {
+        getValue();
     }
 
-    public void polyfunction (int addition,int subtraction,int multiply,int division) {
+    public void polyfunction(int addition,int subtraction,int multiply,int division) {
         value += addition;
         value -= subtraction;
         value *= multiply;
         value /= division;
     }
 
-    public void add (int addition) {
-        value += addition ;/*сложение*/
+    public void add(int addition) {
+        value += addition;/*сложение*/
     }
 
     public void subtract(int subtraction) {
