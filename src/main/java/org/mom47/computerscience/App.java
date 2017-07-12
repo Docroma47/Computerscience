@@ -25,7 +25,7 @@ public class App {
 	}
 
 	public static void main(String[] args) {
-		IntCalculator calculate = new IntCalculator( 36);
+		IntCalculator calculate = new IntCalculator(36);
 		calculate.polyfunction(14, 30,5,4);
 		System.out.println("Polyfunction result: "+ calculate.getValue());
 		App app = new App();
