@@ -8,7 +8,6 @@ public class IntCalculator {
     private int value;
 
     IntCalculator(int value) {
-        getValue();
     }
 
     public void polyfunction(int addition,int subtraction,int multiply,int division) {
