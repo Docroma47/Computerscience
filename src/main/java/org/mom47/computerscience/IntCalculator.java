@@ -10,7 +10,7 @@ public class IntCalculator {
     IntCalculator(int value) {
     }
 
-    public void polyfunction(int addition,int subtraction,int multiply,int division) {
+    public void polyfunction(int addition, int subtraction, int multiply, int division) {
         value += addition;
         value -= subtraction;
         value *= multiply;
