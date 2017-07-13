@@ -8,6 +8,7 @@ public class IntCalculator {
     private int value;
 
     IntCalculator(int value) {
+        this.value = value;/*Конструктор не использовал переменную value так как она (private).Поэтому была ошибка.*/
     }
 
     public void polyfunction(int addition, int subtraction, int multiply, int division) {
@@ -26,7 +27,7 @@ public class IntCalculator {
     }
 
     public void multiplys(int multiply) {
-         value *= multiply;/*умножение*/
+        value *= multiply;/*умножение*/
     }
 
     public void divide(int div) {
@@ -35,5 +36,13 @@ public class IntCalculator {
 
     public int getValue() {
         return value;
+    }
+}
+class ConsoleToolkit {
+    public static void print(String text, int x, int y, String colur) {
+        char escCode = 0x1B;
+        int row = x;
+        int column = y;
+        System.out.print(String.format("%c[%d;%df", escCode, row, column) + colur + text);
     }
 }
