@@ -42,20 +42,17 @@ public class App {
 	public static void main(String[] args) {
 		App app = new App();
 
-		app.printLine();
+		app.drawHorizontalLine(50,50,50);
 	}
 
-	public void printLine() {
-		AnsiConsole.systemInstall();
-
+	public void drawHorizontalLine(int x,int y,int length) {
+		for (x = 1; x <+ 50; x++) {
+			System.out.print("#");
+		}
 		Ansi ansi = Ansi.ansi().eraseScreen();
-
 		ansi.cursor(50, 50).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(49, 50).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(48, 50).fg(Ansi.Color.WHITE).a("#");
-
-		System.out.println(ansi.reset());
-
 		AnsiConsole.systemUninstall();
 	}
 }
