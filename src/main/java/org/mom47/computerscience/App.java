@@ -58,13 +58,13 @@ public class App {
 
 		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
 
-		ansi.cursor(0, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(1, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(2, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(3, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(4, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(5, 0).fg(Ansi.Color.WHITE).a("#");
 		ansi.cursor(6, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(7, 0).fg(Ansi.Color.WHITE).a("#");
 
 		System.out.println(ansi);
 	}
@@ -74,13 +74,13 @@ public class App {
 
 		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
 
-		ansi.cursor(0, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 1).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 2).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 3).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 4).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 5).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(0, 6).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 1).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 3).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 5).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 7).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 9).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 11).fg(Ansi.Color.WHITE).a("# ");
+		ansi.cursor(0, 13).fg(Ansi.Color.WHITE).a("# ");
 
 		System.out.println(ansi);
 	}
