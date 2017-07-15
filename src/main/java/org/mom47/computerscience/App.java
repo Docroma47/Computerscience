@@ -43,45 +43,36 @@ public class App {
 		AnsiConsole.systemInstall();
 		Ansi ansi = Ansi.ansi().eraseScreen();
 		System.out.println(ansi);
-
 		App app = new App();
-
-		// слудующий две строки - это пример, добавь по смыслу другие строки которые дорисовывают доску 8 на 8
-		app.drawHorizontalLine(0, 0, 48);
-		app.drawVerticalLine(0, 0, 48);
-
+		drawHorizontalLine(0, 0, 50);
+		drawHorizontalLine(5, 0, 50);
+		drawHorizontalLine(9, 0, 50);
+		drawHorizontalLine(13, 0, 50);
+		drawHorizontalLine(17, 0, 50);
+		drawHorizontalLine(21, 0, 50);
+		drawVerticalLine(0, 0, 20);
+		drawVerticalLine(0, 8, 20);
+		drawVerticalLine(0, 14, 20);
+		drawVerticalLine(0, 20, 20);
+		drawVerticalLine(0, 26, 20);
+		drawVerticalLine(0, 32, 20);
+		drawVerticalLine(0, 38, 20);
+		drawVerticalLine(0, 44, 20);
+		drawVerticalLine(0, 50, 21);
 		AnsiConsole.systemUninstall();
 	}
 
-	public void drawVerticalLine(int x, int y, int length) {
+	public static void drawVerticalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
-
-		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
-
-		ansi.cursor(1, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(2, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(3, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(4, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(5, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(6, 0).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(7, 0).fg(Ansi.Color.WHITE).a("#");
-
+		for (x = 0; x <= length; x++)
+		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
 
-	public void drawHorizontalLine(int x, int y, int length) {
+	public static void drawHorizontalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
-
-		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
-
-		ansi.cursor(0, 1).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 3).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 5).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 7).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 9).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 11).fg(Ansi.Color.WHITE).a("# ");
-		ansi.cursor(0, 13).fg(Ansi.Color.WHITE).a("# ");
-
+		for (y = 0; y <= length; y++)
+		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
 }
