@@ -41,41 +41,21 @@ public class App {
 
 	public static void main(String[] args) {
 		App app = new App();
-
-		app.drawVerticalLine(0, 0, 1);
-		app.drawHorizontalLine(0, 0, 1);
+		app.drawVerticalLine(00, 00,48);
+		app.drawVerticalLine(06, 06, 48);
 	}
 
-	public void drawHorizontalLine(int x, int y, int length) {
-		for (int i = 0; i <= 475; i++, y++, x++) {
-			if (y == 0) {
-				System.out.print("#");
-			} else if (y == 8 * length) {
-				length++;
-				System.out.print("#");
-			} else {
-				System.out.print(" ");
-			}
+	public void drawVerticalLine(int x, int y, int length) {
+		for (y = 0; y < length; y++) {
+			System.out.print("#");
 		}
 
+		AnsiConsole.systemInstall();
 		Ansi ansi = Ansi.ansi().eraseScreen();
-		ansi.cursor(50, 50).fg(Ansi.Color.RED).a("#");
-		ansi.cursor(49, 50).fg(Ansi.Color.RED).a("#");
-		ansi.cursor(48, 50).fg(Ansi.Color.RED).a("#");
+		ansi.cursor(00, 00).fg(Ansi.Color.RED).a("#");
+		ansi.cursor(02, 03).fg(Ansi.Color.RED).a("#"+1);
+		ansi.cursor(00, 16).fg(Ansi.Color.RED).a("#"+3);
+		System.out.println(ansi.reset());
 		AnsiConsole.systemUninstall();
 	}
-
-	public void drawVerticalLine(int x,int y,int length) {
-		for (int i = 0; i <= 475; i++, y++) {
-			if (y == 0) {
-				System.out.print(" ");
-			} else if (y == 8 * length) {
-				length++;
-				System.out.print(" ");
-			} else {
-				System.out.print("#");
-			}
-		}
-	}
-
 }
