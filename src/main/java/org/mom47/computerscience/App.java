@@ -42,17 +42,40 @@ public class App {
 	public static void main(String[] args) {
 		App app = new App();
 
-		app.drawHorizontalLine(50,50,50);
+		app.drawVerticalLine(0, 0, 1);
+		app.drawHorizontalLine(0, 0, 1);
 	}
 
-	public void drawHorizontalLine(int x,int y,int length) {
-		for (x = 1; x <+ 50; x++) {
-			System.out.print("#");
+	public void drawHorizontalLine(int x, int y, int length) {
+		for (int i = 0; i <= 475; i++, y++, x++) {
+			if (y == 0) {
+				System.out.print("#");
+			} else if (y == 8 * length) {
+				length++;
+				System.out.print("#");
+			} else {
+				System.out.print(" ");
+			}
 		}
+
 		Ansi ansi = Ansi.ansi().eraseScreen();
-		ansi.cursor(50, 50).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(49, 50).fg(Ansi.Color.WHITE).a("#");
-		ansi.cursor(48, 50).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(50, 50).fg(Ansi.Color.RED).a("#");
+		ansi.cursor(49, 50).fg(Ansi.Color.RED).a("#");
+		ansi.cursor(48, 50).fg(Ansi.Color.RED).a("#");
 		AnsiConsole.systemUninstall();
 	}
+
+	public void drawVerticalLine(int x,int y,int length) {
+		for (int i = 0; i <= 475; i++, y++) {
+			if (y == 0) {
+				System.out.print(" ");
+			} else if (y == 8 * length) {
+				length++;
+				System.out.print(" ");
+			} else {
+				System.out.print("#");
+			}
+		}
+	}
+
 }
