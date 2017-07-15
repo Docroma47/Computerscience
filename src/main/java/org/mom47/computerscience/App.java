@@ -40,22 +40,48 @@ public class App {
 	}
 
 	public static void main(String[] args) {
+		AnsiConsole.systemInstall();
+		Ansi ansi = Ansi.ansi().eraseScreen();
+		System.out.println(ansi);
+
 		App app = new App();
-		app.drawVerticalLine(00, 00,48);
-		app.drawVerticalLine(06, 06, 48);
+
+		// слудующий две строки - это пример, добавь по смыслу другие строки которые дорисовывают доску 8 на 8
+		app.drawHorizontalLine(0, 0, 48);
+		app.drawVerticalLine(0, 0, 48);
+
+		AnsiConsole.systemUninstall();
 	}
 
 	public void drawVerticalLine(int x, int y, int length) {
-		for (y = 0; y < length; y++) {
-			System.out.print("#");
-		}
+		Ansi ansi = Ansi.ansi();
 
-		AnsiConsole.systemInstall();
-		Ansi ansi = Ansi.ansi().eraseScreen();
-		ansi.cursor(00, 00).fg(Ansi.Color.RED).a("#");
-		ansi.cursor(02, 03).fg(Ansi.Color.RED).a("#"+1);
-		ansi.cursor(00, 16).fg(Ansi.Color.RED).a("#"+3);
-		System.out.println(ansi.reset());
-		AnsiConsole.systemUninstall();
+		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
+
+		ansi.cursor(0, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(1, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(2, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(3, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(4, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(5, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(6, 0).fg(Ansi.Color.WHITE).a("#");
+
+		System.out.println(ansi);
+	}
+
+	public void drawHorizontalLine(int x, int y, int length) {
+		Ansi ansi = Ansi.ansi();
+
+		// тут замени множественные вызовы функций, на цикл с только одним вызовом, задействуй параметры x, y и length
+
+		ansi.cursor(0, 0).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 1).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 2).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 3).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 4).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 5).fg(Ansi.Color.WHITE).a("#");
+		ansi.cursor(0, 6).fg(Ansi.Color.WHITE).a("#");
+
+		System.out.println(ansi);
 	}
 }
