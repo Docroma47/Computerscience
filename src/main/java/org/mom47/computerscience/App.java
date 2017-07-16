@@ -45,24 +45,24 @@ public class App {
 		System.out.println(ansi);
 		App app = new App();
 
-		app.drawHorizontalLine(1, 0, 49);
+		app.drawHorizontalLine(1, 1, 49);
 		drawHorizontalLine(5, 0, 49);
-		drawHorizontalLine(9, 0, 49);
-		drawHorizontalLine(13, 0, 49);
-		drawHorizontalLine(17, 0, 49);
-		drawHorizontalLine(21, 0, 49);
-		drawHorizontalLine(25, 0, 49);
-		drawHorizontalLine(29, 0, 49);
-		drawHorizontalLine(33, 0, 49);
-		app.drawVerticalLine(0, 0, 33);
-		drawVerticalLine(0, 6, 33);
+		drawHorizontalLine(10, 0, 49);
+		drawHorizontalLine(14, 0, 49);
+		drawHorizontalLine(18, 0, 49);
+		drawHorizontalLine(22, 0, 49);
+		drawHorizontalLine(26, 0, 49);
+		drawHorizontalLine(30, 0, 49);
+		drawHorizontalLine(34, 0, 49);
+		app.drawVerticalLine(1, 1, 33);
+		drawVerticalLine(0, 7, 33);
 		drawVerticalLine(0, 13, 33);
 		drawVerticalLine(0, 19, 33);
 		drawVerticalLine(0, 25, 33);
 		drawVerticalLine(0, 31, 33);
 		drawVerticalLine(0, 37, 33);
 		drawVerticalLine(0, 43, 33);
-		drawVerticalLine(0, 49, 33);
+		drawVerticalLine(0, 49, 34);
 		AnsiConsole.systemUninstall();
 	}
 
