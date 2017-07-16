@@ -45,37 +45,38 @@ public class App {
 		System.out.println(ansi);
 		App app = new App();
 
-		app.drawHorizontalLine(1, 1, 49);
-		drawHorizontalLine(5, 0, 49);
-		drawHorizontalLine(10, 0, 49);
-		drawHorizontalLine(14, 0, 49);
-		drawHorizontalLine(18, 0, 49);
-		drawHorizontalLine(22, 0, 49);
-		drawHorizontalLine(26, 0, 49);
-		drawHorizontalLine(30, 0, 49);
-		drawHorizontalLine(34, 0, 49);
-		app.drawVerticalLine(1, 1, 33);
-		drawVerticalLine(0, 7, 33);
-		drawVerticalLine(0, 13, 33);
-		drawVerticalLine(0, 19, 33);
-		drawVerticalLine(0, 25, 33);
-		drawVerticalLine(0, 31, 33);
-		drawVerticalLine(0, 37, 33);
-		drawVerticalLine(0, 43, 33);
-		drawVerticalLine(0, 49, 34);
+		app.drawHorizontalLine(15, 15, 63);
+		drawHorizontalLine(20, 15, 63);
+		drawHorizontalLine(25, 15, 63);
+		drawHorizontalLine(29, 15, 63);
+		drawHorizontalLine(33, 15, 63);
+		drawHorizontalLine(37, 15, 63);
+		drawHorizontalLine(41, 15, 63);
+		drawHorizontalLine(45, 15, 63);
+		drawHorizontalLine(49, 15, 63);
+		app.drawVerticalLine(15, 15, 48);
+		drawVerticalLine(15, 21, 48);
+		drawVerticalLine(15, 27, 48);
+		drawVerticalLine(15, 33, 48);
+		drawVerticalLine(15, 39, 48);
+		drawVerticalLine(15, 45, 48);
+		drawVerticalLine(15, 51, 48);
+		drawVerticalLine(15, 57, 48);
+		drawVerticalLine(15, 63, 49);
+		AnsiConsole.systemUninstall();
 		AnsiConsole.systemUninstall();
 	}
 
 	public static void drawVerticalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
-		for (x = 0; x <= length; x++)
+		for (; x <= length; x++)
 		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
 
 	public static void drawHorizontalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
-		for (y = 0; y <= length; y++)
+		for (; y <= length; y++)
 		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
