@@ -5,7 +5,6 @@ import org.fusesource.jansi.AnsiConsole;
 
 public class App {
 
-	// добавить остальные константы для каждого типа фигуры, пример:
 	private static final String WHITE_KING = "♔";
 	private static final String BLACK_KING = "♚";
 	private static final String WHITE_QUEEN = "♕";
@@ -18,7 +17,6 @@ public class App {
 	private static final String BLACK_KNIGHT = "♞";
 	private static final String WHITE_PAWN = "♙";
 	private static final String BLACK_PAWN = "♟";
-	// остальные переменные тут.. для всех типов и цветов фигур
 
 	// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
 	// ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜
@@ -144,6 +142,7 @@ public class App {
 	}
 
 	private static void printFigures() {
+		//WHITE
 		print(43, 16, WHITE_KING);
 		print(39, 16, WHITE_QUEEN);
 		print(35, 16, WHITE_BISHOP);
