@@ -70,7 +70,7 @@ public class App {
 		AnsiConsole.systemUninstall();
 	}
 
-	private static drawBasicBoard() {
+	private static void drawBasicBoard() {
 		drawHorizontalLine(15, 15, 63);
 		drawHorizontalLine(19, 15, 63);
 		drawHorizontalLine(23, 15, 63);
