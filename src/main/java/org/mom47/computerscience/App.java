@@ -135,50 +135,15 @@ public class App {
 		print(15, 22, "        1 ║   │   │   │   │   │   │   │   ║");
 		print(15, 22, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
 		print(15, 22, "            A   B   C   D   E   F   G   H");
-		// перевести вывод доски на использование метода print
-		// пример
-		// Ansi ansi = Ansi.ansi();
-		// print(12, 1, "╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗"); (координыты 12, 1 - только для примера, подбери правельные)
-		// и т.д.
-
-		System.out.println("          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
-		System.out.println("        8 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        7 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        6 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        5 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        4 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        3 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        2 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        1 ║   │   │   │   │   │   │   │   ║");
-		System.out.println("          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
-		System.out.println("            A   B   C   D   E   F   G   H");
-	}								// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
+	}
 
 	private static void print(int x, int y, String text) {
-		AnsiConsole.systemInstall();
-
 		Ansi ansi = Ansi.ansi();
-		print(10, 10, "ХАХА!! ТЕКСТ!");
-
-		AnsiConsole.systemUninstall();
-
+		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a(text);
 		System.out.println(ansi);
-		// напечатать на консоль произволный текст по координатам x, y с помощью Ansi библиотеки
-
-		// не забывай в конце вызывать System.out.println(ansi); иначе ничего печататься не будет
 	}
 
 	private static void printFigures() {
-
-		// напечатать фигуры на доске с помощью метода print, пример (координыи 13 и 2 - только для примера, подебери правильные)
-
 		print(15, 43, WHITE_KING);
 		print(15, 39, WHITE_QUEEN);
 		print(15, 35, WHITE_BISHOP);
@@ -193,6 +158,6 @@ public class App {
 		print(15, 27, WHITE_PAWN);
 		print(15, 47, WHITE_PAWN);
 		print(15, 51, WHITE_PAWN);
-		// print... - все остальные фигуры
+
 	}
-}// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
+}
