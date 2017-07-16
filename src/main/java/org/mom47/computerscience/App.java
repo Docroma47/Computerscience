@@ -4,6 +4,25 @@ import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 
 public class App {
+
+	// добавить остальные константы для каждого типа фигуры, пример:
+	private static final String WHITE_ROOK = "♖";
+	private static final String BLACK_ROOK = "♜";
+	// остальные переменные тут.. для всех типов и цветов фигур
+
+	// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
+	// ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜
+	// ♟
+	// ♙
+
+	// ROOK - ладья
+	// KING - король
+	// QUEEN - королева
+	// BISHOP - слон
+	// KNIGHT - конь
+	// PAWN - пешка
+
+
 	private void calculateDays() {
 		IntCalculator daysInJuly;
 		IntCalculator daysInJune;
@@ -43,27 +62,11 @@ public class App {
 		AnsiConsole.systemInstall();
 		Ansi ansi = Ansi.ansi().eraseScreen();
 		System.out.println(ansi);
-		App app = new App();
 
-		app.drawHorizontalLine(15, 15, 63);
-		drawHorizontalLine(20, 15, 63);
-		drawHorizontalLine(25, 15, 63);
-		drawHorizontalLine(29, 15, 63);
-		drawHorizontalLine(33, 15, 63);
-		drawHorizontalLine(37, 15, 63);
-		drawHorizontalLine(41, 15, 63);
-		drawHorizontalLine(45, 15, 63);
-		drawHorizontalLine(49, 15, 63);
-		app.drawVerticalLine(15, 15, 48);
-		drawVerticalLine(15, 21, 48);
-		drawVerticalLine(15, 27, 48);
-		drawVerticalLine(15, 33, 48);
-		drawVerticalLine(15, 39, 48);
-		drawVerticalLine(15, 45, 48);
-		drawVerticalLine(15, 51, 48);
-		drawVerticalLine(15, 57, 48);
-		drawVerticalLine(15, 63, 49);
-		AnsiConsole.systemUninstall();
+		printChessDesk();
+
+		printFigures();
+
 		AnsiConsole.systemUninstall();
 	}
 
@@ -81,11 +84,17 @@ public class App {
 		System.out.println(ansi);
 	}
 
-	private static void printBasicChessDesk() {
+	private static void printChessDesk() {
+		// перевести вывод доски на использование метода print
+		// пример
+		// Ansi ansi = Ansi.ansi();
+		// print(12, 1, "╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗"); (координыты 12, 1 - только для примера, подбери правельные)
+		// и т.д.
+
 		System.out.println("          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
-		System.out.println("        8 ║ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ ║");
+		System.out.println("        8 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        7 ║ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ ║");
+		System.out.println("        7 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
 		System.out.println("        6 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
@@ -95,10 +104,24 @@ public class App {
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
 		System.out.println("        3 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        2 ║ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ ║");
+		System.out.println("        2 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		System.out.println("        1 ║ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ ║");
+		System.out.println("        1 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
 		System.out.println("            A   B   C   D   E   F   G   H");
+	}
+
+	private static void print(int x, int y, String text) {
+		// напечатать на консоль произволный текст по координатам x, y с помощью Ansi библиотеки
+
+		// не забывай в конце вызывать System.out.println(ansi); иначе ничего печататься не будет
+	}
+
+	private static void printFigures() {
+
+		// напечатать фигуры на доске с помощью метода print, пример (координыи 13 и 2 - только для примера, подебери правильные)
+
+		print(13, 2, WHITE_ROOK);
+		// print... - все остальные фигуры
 	}
 }
