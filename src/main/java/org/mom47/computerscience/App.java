@@ -46,14 +46,14 @@ public class App {
 		App app = new App();
 
 		app.drawHorizontalLine(15, 15, 63);
-		drawHorizontalLine(20, 15, 63);
-		drawHorizontalLine(25, 15, 63);
-		drawHorizontalLine(29, 15, 63);
-		drawHorizontalLine(33, 15, 63);
-		drawHorizontalLine(37, 15, 63);
-		drawHorizontalLine(41, 15, 63);
-		drawHorizontalLine(45, 15, 63);
-		drawHorizontalLine(49, 15, 63);
+		drawHorizontalLine(19, 15, 63);
+		drawHorizontalLine(24, 15, 63);
+		drawHorizontalLine(28, 15, 63);
+		drawHorizontalLine(32, 15, 63);
+		drawHorizontalLine(36, 15, 63);
+		drawHorizontalLine(40, 15, 63);
+		drawHorizontalLine(44, 15, 63);
+		drawHorizontalLine(48, 15, 63);
 		app.drawVerticalLine(15, 15, 48);
 		drawVerticalLine(15, 21, 48);
 		drawVerticalLine(15, 27, 48);
@@ -62,7 +62,7 @@ public class App {
 		drawVerticalLine(15, 45, 48);
 		drawVerticalLine(15, 51, 48);
 		drawVerticalLine(15, 57, 48);
-		drawVerticalLine(15, 63, 49);
+		drawVerticalLine(15, 63, 48);
 		AnsiConsole.systemUninstall();
 		AnsiConsole.systemUninstall();
 	}
