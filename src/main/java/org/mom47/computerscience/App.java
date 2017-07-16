@@ -70,6 +70,27 @@ public class App {
 		AnsiConsole.systemUninstall();
 	}
 
+	private static drawBasicBoard() {
+		drawHorizontalLine(15, 15, 63);
+		drawHorizontalLine(19, 15, 63);
+		drawHorizontalLine(23, 15, 63);
+		drawHorizontalLine(27, 15, 63);
+		drawHorizontalLine(31, 15, 63);
+		drawHorizontalLine(35, 15, 63);
+		drawHorizontalLine(39, 15, 63);
+		drawHorizontalLine(43, 15, 63);
+		drawHorizontalLine(47, 15, 63);
+		drawVerticalLine(15, 15, 47);
+		drawVerticalLine(15, 21, 47);
+		drawVerticalLine(15, 27, 47);
+		drawVerticalLine(15, 33, 47);
+		drawVerticalLine(15, 39, 47);
+		drawVerticalLine(15, 45, 47);
+		drawVerticalLine(15, 51, 47);
+		drawVerticalLine(15, 57, 47);
+		drawVerticalLine(15, 63, 47);
+	}
+
 	public static void drawVerticalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
 		for (; x <= length; x++)
