@@ -80,4 +80,25 @@ public class App {
 		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
+
+	private static void printBasicChessDesk() {
+		System.out.println("          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
+		System.out.println("        8 ║ ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖ ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        7 ║ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ │ ♙ ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        6 ║   │   │   │   │   │   │   │   ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        5 ║   │   │   │   │   │   │   │   ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        4 ║   │   │   │   │   │   │   │   ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        3 ║   │   │   │   │   │   │   │   ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        2 ║ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ │ ♟ ║");
+		System.out.println("          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		System.out.println("        1 ║ ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜ ║");
+		System.out.println("          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
+		System.out.println("            A   B   C   D   E   F   G   H");
+	}
 }
