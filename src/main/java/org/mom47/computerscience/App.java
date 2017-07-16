@@ -6,8 +6,18 @@ import org.fusesource.jansi.AnsiConsole;
 public class App {
 
 	// добавить остальные константы для каждого типа фигуры, пример:
+	private static final String WHITE_KING = "♔";
+	private static final String BLACK_KING = "♚";
+	private static final String WHITE_QUEEN = "♕";
+	private static final String BLACK_QUEEN = "♛";
 	private static final String WHITE_ROOK = "♖";
 	private static final String BLACK_ROOK = "♜";
+	private static final String WHITE_BISHOP = "♗";
+	private static final String BLACK_BISHOP = "♝";
+	private static final String WHITE_KNIGHT = "♘";
+	private static final String BLACK_KNIGHT = "♞";
+	private static final String WHITE_PAWN = "♙";
+	private static final String BLACK_PAWN = "♟";
 	// остальные переменные тут.. для всех типов и цветов фигур
 
 	// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
@@ -106,6 +116,25 @@ public class App {
 	}
 
 	private static void printChessDesk() {
+		Ansi ansi = Ansi.ansi();
+		print(15, 15, "          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
+		print(15, 16, "        8 ║   │   │   │   │   │   │   │   ║");
+		print(15, 17, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 18, "        7 ║   │   │   │   │   │   │   │   ║");
+		print(15, 19, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 20, "        6 ║   │   │   │   │   │   │   │   ║");
+		print(15, 21, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 22, "        5 ║   │   │   │   │   │   │   │   ║");
+		print(15, 22, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 22, "        4 ║   │   │   │   │   │   │   │   ║");
+		print(15, 22, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 22, "        3 ║   │   │   │   │   │   │   │   ║");
+		print(15, 22, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 22, "        2 ║   │   │   │   │   │   │   │   ║");
+		print(15, 22, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(15, 22, "        1 ║   │   │   │   │   │   │   │   ║");
+		print(15, 22, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
+		print(15, 22, "            A   B   C   D   E   F   G   H");
 		// перевести вывод доски на использование метода print
 		// пример
 		// Ansi ansi = Ansi.ansi();
@@ -130,9 +159,17 @@ public class App {
 		System.out.println("        1 ║   │   │   │   │   │   │   │   ║");
 		System.out.println("          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
 		System.out.println("            A   B   C   D   E   F   G   H");
-	}
+	}								// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
 
 	private static void print(int x, int y, String text) {
+		AnsiConsole.systemInstall();
+
+		Ansi ansi = Ansi.ansi();
+		print(10, 10, "ХАХА!! ТЕКСТ!");
+
+		AnsiConsole.systemUninstall();
+
+		System.out.println(ansi);
 		// напечатать на консоль произволный текст по координатам x, y с помощью Ansi библиотеки
 
 		// не забывай в конце вызывать System.out.println(ansi); иначе ничего печататься не будет
@@ -142,7 +179,20 @@ public class App {
 
 		// напечатать фигуры на доске с помощью метода print, пример (координыи 13 и 2 - только для примера, подебери правильные)
 
-		print(13, 2, WHITE_ROOK);
+		print(15, 43, WHITE_KING);
+		print(15, 39, WHITE_QUEEN);
+		print(15, 35, WHITE_BISHOP);
+		print(15, 31, WHITE_KNIGHT);
+		print(15, 27, WHITE_ROOK);
+		print(15, 47, WHITE_BISHOP);
+		print(15, 51, WHITE_KNIGHT);
+		print(15, 43, WHITE_PAWN);
+		print(15, 39, WHITE_PAWN);
+		print(15, 35, WHITE_PAWN);
+		print(15, 31, WHITE_PAWN);
+		print(15, 27, WHITE_PAWN);
+		print(15, 47, WHITE_PAWN);
+		print(15, 51, WHITE_PAWN);
 		// print... - все остальные фигуры
 	}
-}
+}// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
