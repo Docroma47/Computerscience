@@ -71,9 +71,9 @@ public class App {
 		Ansi ansi = Ansi.ansi().eraseScreen();
 		System.out.println(ansi);
 
-		printChessDesk();
+		printChessDesk(5, 5);
 
-		printFigures();
+		printFigures(5, 5);
 
 		AnsiConsole.systemUninstall();
 	}
@@ -113,26 +113,26 @@ public class App {
 		System.out.println(ansi);
 	}
 
-	private static void printChessDesk() {
+	private static void printChessDesk(int x, int y) {
 		Ansi ansi = Ansi.ansi();
-		print(15, 15, "          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
-		print(15, 16, "        8 ║   │   │   │   │   │   │   │   ║");
-		print(15, 17, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 18, "        7 ║   │   │   │   │   │   │   │   ║");
-		print(15, 19, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 20, "        6 ║   │   │   │   │   │   │   │   ║");
-		print(15, 21, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 22, "        5 ║   │   │   │   │   │   │   │   ║");
-		print(15, 23, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 24, "        4 ║   │   │   │   │   │   │   │   ║");
-		print(15, 25, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 26, "        3 ║   │   │   │   │   │   │   │   ║");
-		print(15, 27, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 28, "        2 ║   │   │   │   │   │   │   │   ║");
-		print(15, 29, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(15, 30, "        1 ║   │   │   │   │   │   │   │   ║");
-		print(15, 31, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
-		print(15, 32, "            A   B   C   D   E   F   G   H");
+		print(x, y, "          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
+		print(x, y+1, "        8 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+2, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+3, "        7 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+4, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+5, "        6 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+6, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+7, "        5 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+8, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+9, "        4 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+10, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+11, "        3 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+12, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+13, "        2 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+14, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y+15, "        1 ║   │   │   │   │   │   │   │   ║");
+		print(x, y+16, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
+		print(x, y+17, "            A   B   C   D   E   F   G   H");
 	}
 
 	private static void print(int x, int y, String text) {
@@ -141,42 +141,40 @@ public class App {
 		System.out.println(ansi);
 	}
 
-	private static void printFigures() {
+	private static void printFigures(int x, int y) {
 		//WHITE
-		print(43, 16, WHITE_KING);
-		print(39, 16, WHITE_QUEEN);
-		print(35, 16, WHITE_BISHOP);
-		print(31, 16, WHITE_KNIGHT);
-		print(27, 16, WHITE_ROOK);
-		print(27, 16, WHITE_ROOK);
-		print(47, 16, WHITE_BISHOP);
-		print(51, 16, WHITE_KNIGHT);
-		print(55, 16, WHITE_ROOK);
-		print(43, 18, WHITE_PAWN);
-		print(39, 18, WHITE_PAWN);
-		print(35, 18, WHITE_PAWN);
-		print(31, 18, WHITE_PAWN);
-		print(27, 18, WHITE_PAWN);
-		print(47, 18, WHITE_PAWN);
-		print(51, 18, WHITE_PAWN);
-		print(55, 18, WHITE_PAWN);
+		print(x+28, y+1, WHITE_KING);
+		print(x+24, y+1, WHITE_QUEEN);
+		print(x+20, y+1, WHITE_BISHOP);
+		print(x+16, y+1, WHITE_KNIGHT);
+		print(x+12, y+1, WHITE_ROOK);
+		print(x+40, y+1, WHITE_ROOK);
+		print(x+32, y+1, WHITE_BISHOP);
+		print(x+36, y+1, WHITE_KNIGHT);
+		print(x+12, y+3, WHITE_PAWN);
+		print(x+16, y+3, WHITE_PAWN);
+		print(x+20, y+3, WHITE_PAWN);
+		print(x+24, y+3, WHITE_PAWN);
+		print(x+28, y+3, WHITE_PAWN);
+		print(x+32, y+3, WHITE_PAWN);
+		print(x+36, y+3, WHITE_PAWN);
+		print(x+40, y+3, WHITE_PAWN);
 		//BLACK
-		print(43, 30, BLACK_KING);
-		print(39, 30, BLACK_QUEEN);
-		print(35, 30, BLACK_BISHOP);
-		print(31, 30, BLACK_KNIGHT);
-		print(27, 30, BLACK_ROOK);
-		print(27, 30, BLACK_ROOK);
-		print(47, 30, BLACK_BISHOP);
-		print(51, 30, BLACK_KNIGHT);
-		print(55, 30, BLACK_ROOK);
-		print(43, 28, BLACK_PAWN);
-		print(39, 28, BLACK_PAWN);
-		print(35, 28, BLACK_PAWN);
-		print(31, 28, BLACK_PAWN);
-		print(27, 28, BLACK_PAWN);
-		print(47, 28, BLACK_PAWN);
-		print(51, 28, BLACK_PAWN);
-		print(55, 28, BLACK_PAWN);
+		print(x+28, y+15, BLACK_KING);
+		print(x+24, y+15, BLACK_QUEEN);
+		print(x+20, y+15, BLACK_BISHOP);
+		print(x+16, y+15, BLACK_KNIGHT);
+		print(x+12, y+15, BLACK_ROOK);
+		print(x+40, y+15, BLACK_ROOK);
+		print(x+32, y+15, BLACK_BISHOP);
+		print(x+36, y+15, BLACK_KNIGHT);
+		print(x+12, y+13, BLACK_PAWN);
+		print(x+16, y+13, BLACK_PAWN);
+		print(x+20, y+13, BLACK_PAWN);
+		print(x+24, y+13, BLACK_PAWN);
+		print(x+28, y+13, BLACK_PAWN);
+		print(x+32, y+13, BLACK_PAWN);
+		print(x+36, y+13, BLACK_PAWN);
+		print(x+40, y+13, BLACK_PAWN);
 	}
 }
