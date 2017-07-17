@@ -4,7 +4,6 @@ import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 
 public class App {
-
 	private static final String WHITE_KING = "♔";
 	private static final String BLACK_KING = "♚";
 	private static final String WHITE_QUEEN = "♕";
@@ -18,19 +17,6 @@ public class App {
 	private static final String WHITE_PAWN = "♙";
 	private static final String BLACK_PAWN = "♟";
 
-	// ♖ │ ♘ │ ♗ │ ♕ │ ♔ │ ♗ │ ♘ │ ♖
-	// ♜ │ ♞ │ ♝ │ ♛ │ ♚ │ ♝ │ ♞ │ ♜
-	// ♟
-	// ♙
-
-	// ROOK - ладья
-	// KING - король
-	// QUEEN - королева
-	// BISHOP - слон
-	// KNIGHT - конь
-	// PAWN - пешка
-
-
 	private void calculateDays() {
 		IntCalculator daysInJuly;
 		IntCalculator daysInJune;
@@ -42,7 +28,6 @@ public class App {
 		System.out.println("Days in June: " + daysInJune.getValue());
 		System.out.println("Days in July: " + daysInJuly.getValue());
 	}
-
 	private void calculateHoursAndDayAprilMarch() {
 		IntCalculator hoursInApril;
 		IntCalculator hoursInMarch;
@@ -70,11 +55,8 @@ public class App {
 		AnsiConsole.systemInstall();
 		Ansi ansi = Ansi.ansi().eraseScreen();
 		System.out.println(ansi);
-
 		printChessDesk(5, 5);
-
 		printFigures(5, 5);
-
 		AnsiConsole.systemUninstall();
 	}
 
@@ -115,24 +97,24 @@ public class App {
 
 	private static void printChessDesk(int x, int y) {
 		Ansi ansi = Ansi.ansi();
-		print(x, y, "          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");
-		print(x, y+1, "        8 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+2, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+3, "        7 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+4, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+5, "        6 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+6, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+7, "        5 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+8, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+9, "        4 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+10, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+11, "        3 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+12, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+13, "        2 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+14, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
-		print(x, y+15, "        1 ║   │   │   │   │   │   │   │   ║");
-		print(x, y+16, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
-		print(x, y+17, "            A   B   C   D   E   F   G   H");
+		print(x, y, "          ╔═══╤═══╤═══╤═══╤═══╤═══╤═══╤═══╗");//это считается говнокодом? Я просто выровнял до ковычек.
+		print(x, y + 1, "        8 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 2, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 3, "        7 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 4, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 5, "        6 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 6, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 7, "        5 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 8, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 9, "        4 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 10, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 11, "        3 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 12, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 13, "        2 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 14, "          ╟───┼───┼───┼───┼───┼───┼───┼───╢");
+		print(x, y + 15, "        1 ║   │   │   │   │   │   │   │   ║");
+		print(x, y + 16, "          ╚═══╧═══╧═══╧═══╧═══╧═══╧═══╧═══╝");
+		print(x, y + 17, "            A   B   C   D   E   F   G   H");
 	}
 
 	private static void print(int x, int y, String text) {
@@ -142,39 +124,37 @@ public class App {
 	}
 
 	private static void printFigures(int x, int y) {
-		//WHITE
-		print(x+28, y+1, WHITE_KING);
-		print(x+24, y+1, WHITE_QUEEN);
-		print(x+20, y+1, WHITE_BISHOP);
-		print(x+16, y+1, WHITE_KNIGHT);
-		print(x+12, y+1, WHITE_ROOK);
-		print(x+40, y+1, WHITE_ROOK);
-		print(x+32, y+1, WHITE_BISHOP);
-		print(x+36, y+1, WHITE_KNIGHT);
-		print(x+12, y+3, WHITE_PAWN);
-		print(x+16, y+3, WHITE_PAWN);
-		print(x+20, y+3, WHITE_PAWN);
-		print(x+24, y+3, WHITE_PAWN);
-		print(x+28, y+3, WHITE_PAWN);
-		print(x+32, y+3, WHITE_PAWN);
-		print(x+36, y+3, WHITE_PAWN);
-		print(x+40, y+3, WHITE_PAWN);
-		//BLACK
-		print(x+28, y+15, BLACK_KING);
-		print(x+24, y+15, BLACK_QUEEN);
-		print(x+20, y+15, BLACK_BISHOP);
-		print(x+16, y+15, BLACK_KNIGHT);
-		print(x+12, y+15, BLACK_ROOK);
-		print(x+40, y+15, BLACK_ROOK);
-		print(x+32, y+15, BLACK_BISHOP);
-		print(x+36, y+15, BLACK_KNIGHT);
-		print(x+12, y+13, BLACK_PAWN);
-		print(x+16, y+13, BLACK_PAWN);
-		print(x+20, y+13, BLACK_PAWN);
-		print(x+24, y+13, BLACK_PAWN);
-		print(x+28, y+13, BLACK_PAWN);
-		print(x+32, y+13, BLACK_PAWN);
-		print(x+36, y+13, BLACK_PAWN);
-		print(x+40, y+13, BLACK_PAWN);
+		print(x + 28, y + 1, WHITE_KING);
+		print(x + 24, y + 1, WHITE_QUEEN);
+		print(x + 20, y +1, WHITE_BISHOP);
+		print(x + 16, y + 1, WHITE_KNIGHT);
+		print(x + 12, y + 1, WHITE_ROOK);
+		print(x + 40, y + 1, WHITE_ROOK);
+		print(x + 32, y + 1, WHITE_BISHOP);
+		print(x + 36, y + 1, WHITE_KNIGHT);
+		print(x + 12, y + 3, WHITE_PAWN);
+		print(x + 16, y + 3, WHITE_PAWN);
+		print(x + 20, y + 3, WHITE_PAWN);
+		print(x + 24, y + 3, WHITE_PAWN);
+		print(x + 28, y + 3, WHITE_PAWN);
+		print(x + 32, y + 3, WHITE_PAWN);
+		print(x + 36, y + 3, WHITE_PAWN);
+		print(x + 40, y + 3, WHITE_PAWN);
+		print(x + 28, y + 15, BLACK_KING);
+		print(x + 24, y + 15, BLACK_QUEEN);
+		print(x + 20, y + 15, BLACK_BISHOP);
+		print(x + 16, y + 15, BLACK_KNIGHT);
+		print(x + 12, y + 15, BLACK_ROOK);
+		print(x + 40, y + 15, BLACK_ROOK);
+		print(x + 32, y + 15, BLACK_BISHOP);
+		print(x + 36, y + 15, BLACK_KNIGHT);
+		print(x + 12, y + 13, BLACK_PAWN);
+		print(x + 16, y + 13, BLACK_PAWN);
+		print(x + 20, y + 13, BLACK_PAWN);
+		print(x + 24, y + 13, BLACK_PAWN);
+		print(x + 28, y + 13, BLACK_PAWN);
+		print(x + 32, y + 13, BLACK_PAWN);
+		print(x + 36, y + 13, BLACK_PAWN);
+		print(x + 40, y + 13, BLACK_PAWN);
 	}
 }
