@@ -156,10 +156,10 @@ public class App {
 		//print(x + 24, y + 13, BLACK_PAWN);
 		//print(x + 28, y + 13, BLACK_PAWN);
 		//print(x + 32, y + 13, BLACK_PAWN);
-		for (int i = 1;i <= 8;i++) {
+		for (int i = 1; i <= 8; i++) {
 			print(x + (4 * i), y + 3, WHITE_PAWN);
 		}
-		for (int i = 1;i <= 8;i++){
+		for (int i = 1; i <= 8; i++){
 			print(x + (4 * i), y + 13, BLACK_PAWN);
 		}
 
