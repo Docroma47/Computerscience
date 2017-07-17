@@ -60,8 +60,8 @@ public class App {
 		AnsiConsole.systemUninstall();
 		printChessDesk(15, 25);
 		printFigures(15, 25);
-		printChessDesk(35, 8);
-		printFigures(45, 18);
+		printChessDesk(55, 18);
+		printFigures(55, 18);
 	}
 
 	private static void drawBasicBoard() {
