@@ -126,7 +126,7 @@ public class App {
 	private static void printFigures(int x, int y) {
 		print(x + 28, y + 1, WHITE_KING);
 		print(x + 24, y + 1, WHITE_QUEEN);
-		print(x + 20, y +1, WHITE_BISHOP);
+		print(x + 20, y + 1, WHITE_BISHOP);
 		print(x + 16, y + 1, WHITE_KNIGHT);
 		print(x + 12, y + 1, WHITE_ROOK);
 		print(x + 40, y + 1, WHITE_ROOK);
