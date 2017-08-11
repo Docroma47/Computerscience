@@ -52,12 +52,32 @@ public class App {
 	}
 
 	public static void main(String[] args) {
-		AnsiConsole.systemInstall();
-		Ansi ansi = Ansi.ansi().eraseScreen();
-		System.out.println(ansi);
-		printChessDesk(5, 5);
-		printFigures(5, 5);
-		AnsiConsole.systemUninstall();
+		if ((2 < 3) && (7 != 4) || (2 * 3 +2 == 8)) {
+			System.out.println(true);
+		}
+		int b1 = 12;
+		if (b1 != 0 ) {
+			System.out.println("Hello");
+		}
+		int a = 7%2;
+		int b = 7;
+		b += 3;
+		int c = 5;
+		c++;
+		int d = 8;
+		d--;
+		int i = 2 + 3;
+		int j = i + 3;
+		int j1 = (i + 3) * 2;
+		System.out.println("a = 7 % 2 = " + a);
+		System.out.println("b = 7 = b += 3 = " + b);
+		System.out.println("c = 5 = c++ = " + c);
+		System.out.println("d = 8 = d-- = " + d);
+		System.out.println("i = 2 + 3 = " + i);
+		System.out.println("j = i + 3 = " + j);
+		System.out.println("Result is " + (i + (i = 3)));
+		System.out.println("Result is j = i + 3 " + j);
+		System.out.println("Result is j = (i + 3) * 2 " + j1);
 	}
 
 	private static void drawBasicBoard() {
@@ -84,14 +104,14 @@ public class App {
 	public static void drawVerticalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
 		for (; x <= length; x++)
-		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
+			ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
 
 	public static void drawHorizontalLine(int x, int y, int length) {
 		Ansi ansi = Ansi.ansi();
 		for (; y <= length; y++)
-		ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
+			ansi.cursor(x, y).fg(Ansi.Color.WHITE).a("#");
 		System.out.println(ansi);
 	}
 

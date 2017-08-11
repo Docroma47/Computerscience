@@ -1,14 +1,11 @@
 package org.mom47.computerscience;
 
-/**
- * Calculator
- */
 
 public class IntCalculator {
     private int value;
 
     IntCalculator(int value) {
-        this.value = value;/*Конструктор не использовал переменную value так как она (private).Поэтому была ошибка.*/
+        this.value = value;
     }
 
     public void polyfunction(int addition, int subtraction, int multiply, int division) {
@@ -19,19 +16,19 @@ public class IntCalculator {
     }
 
     public void add(int addition) {
-        value += addition;/*сложение*/
+        value += addition;
     }
 
     public void subtract(int subtraction) {
-        value -= subtraction;/*вычетание*/
+        value -= subtraction;
     }
 
     public void multiplys(int multiply) {
-        value *= multiply;/*умножение*/
+        value *= multiply;
     }
 
     public void divide(int div) {
-        value /= div;/*деление*/
+        value /= div;
     }
 
     public int getValue() {
