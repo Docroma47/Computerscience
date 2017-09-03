@@ -5,6 +5,7 @@ public class FunctionDemo {
     private String classVariable = "This is a variable which belongs to an object of FunctionDemo class";
     private static String staticVariable = "This is a variable which belongs to FunctionDemoe class";
 
+
     private String classMethod() {
 
         // This variable can only be seen inside of the 'classMethod'
@@ -70,6 +71,13 @@ public class FunctionDemo {
 
         // this is a demonstration of a useful call of a method (returning value is used in the console output):
         System.out.println("useful invocation: " + functionDemo.classMethod());
+
+        int i = 0;
+
+        i = 100 * 5 + 1;
+
+        System.out.println("The result of calculation is: " + i);
+
     }
 
 }
