@@ -72,12 +72,20 @@ public class FunctionDemo {
         // this is a demonstration of a useful call of a method (returning value is used in the console output):
         System.out.println("useful invocation: " + functionDemo.classMethod());
 
+        int i = calculateValue();
+
+        //i = 100 * 5 + 1;
+
+        System.out.println("The result of calculation is: " + i);
+
+    }
+
+    private static int calculateValue() {
         int i = 0;
 
         i = 100 * 5 + 1;
 
-        System.out.println("The result of calculation is: " + i);
-
+        return i;
     }
 
 }
