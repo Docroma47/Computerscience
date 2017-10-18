@@ -58,11 +58,7 @@ public class App {
 
 	public static void main(String[] args) {
 		App app = new App();
-		if (args.length > 0) {
-			if (args[0].equals("random")) {
-				app.consolCalculator.calculte();
-			}
-		}
+
 	}
 
 	private static void drawBasicBoard() {
