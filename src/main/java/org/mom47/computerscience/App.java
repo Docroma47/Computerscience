@@ -4,6 +4,7 @@ import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;
 
 public class App {
+	private ConsolCalculator consolCalculator;
 	private static final String WHITE_KING = "♔";
 	private static final String BLACK_KING = "♚";
 	private static final String WHITE_QUEEN = "♕";
@@ -51,33 +52,17 @@ public class App {
 		System.out.println("Polyfunction result: " + calculate.getValue());
 	}
 
+	public App() {
+		consolCalculator = new ConsolCalculator();
+	}
+
 	public static void main(String[] args) {
-		if ((2 < 3) && (7 != 4) || (2 * 3 +2 == 8)) {
-			System.out.println(true);
+		App app = new App();
+		if (args.length > 0) {
+			if (args[0].equals("random")) {
+				app.consolCalculator.calculte();
+			}
 		}
-		int b1 = 12;
-		if (b1 != 0 ) {
-			System.out.println("Hello");
-		}
-		int a = 7%2;
-		int b = 7;
-		b += 3;
-		int c = 5;
-		c++;
-		int d = 8;
-		d--;
-		int i = 2 + 3;
-		int j = i + 3;
-		int j1 = (i + 3) * 2;
-		System.out.println("a = 7 % 2 = " + a);
-		System.out.println("b = 7 = b += 3 = " + b);
-		System.out.println("c = 5 = c++ = " + c);
-		System.out.println("d = 8 = d-- = " + d);
-		System.out.println("i = 2 + 3 = " + i);
-		System.out.println("j = i + 3 = " + j);
-		System.out.println("Result is " + (i + (i = 3)));
-		System.out.println("Result is j = i + 3 " + j);
-		System.out.println("Result is j = (i + 3) * 2 " + j1);
 	}
 
 	private static void drawBasicBoard() {
