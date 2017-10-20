@@ -18,17 +18,19 @@ public class ConsolCalculator {
         Left,
         Right,
         Down,
-        Enter
+        Enter,
+        Escape
     };
 
     public static void main(String[] args) throws IOException {
 
         KeyMap map = new KeyMap();
-        map.bind(Action.Up, "[A");
-        map.bind(Action.Left, "[D");
-        map.bind(Action.Right, "[C");
-        map.bind(Action.Down, "[B");
+        map.bind(Action.Up, "\033[A");
+        map.bind(Action.Left, "\033[D");
+        map.bind(Action.Right, "\033[C");
+        map.bind(Action.Down, "\033[B");
         map.bind(Action.Enter, "\r");
+        map.bind(Action.Escape, "\033");
 
         Console console = System.console();
         Terminal terminal = TerminalBuilder.terminal();
