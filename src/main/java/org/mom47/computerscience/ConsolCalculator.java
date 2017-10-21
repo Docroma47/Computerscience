@@ -19,7 +19,7 @@ public class ConsolCalculator {
         Right,
         Down,
         Enter,
-        Escape
+        Escape,
     }
 
     public static void main(String[] args) throws IOException {
