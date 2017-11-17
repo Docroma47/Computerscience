@@ -10,10 +10,10 @@ public class CarInventoryReader {
     public static void main(String[] args) throws IOException {
         if (args.length > 0) {
             File file = new File(args[0]);
-            System.out.println("Car brand: " + toJavaObject(file).getCarBrand());
-            System.out.println("Car color: " + toJavaObject(file).getCarColor());
-            System.out.println("Release date: " + toJavaObject(file).getReleaseDate());
-            System.out.println("Cost car : " + toJavaObject(file).getCostCar());
+            System.out.println("Car brand: " + toJavaObject(file).getCarBrand()
+                    + "Car color: " + toJavaObject(file).getCarColor()
+                    + "Release date: " + toJavaObject(file).getReleaseDate()
+                    + "Cost car : " + toJavaObject(file).getCostCar());
         }
     }
 
