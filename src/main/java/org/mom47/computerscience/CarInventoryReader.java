@@ -11,9 +11,9 @@ public class CarInventoryReader {
         if (args.length > 0) {
             File file = new File(args[0]);
             System.out.println("Car brand: " + toJavaObject(file).getCarBrand()
-                    + "Car color: " + toJavaObject(file).getCarColor()
-                    + "Release date: " + toJavaObject(file).getReleaseDate()
-                    + "Cost car : " + toJavaObject(file).getCostCar());
+                    + "; Car color: " + toJavaObject(file).getCarColor()
+                    + "; Release date: " + toJavaObject(file).getReleaseDate()
+                    + "; Cost car : " + toJavaObject(file).getCostCar() + ";");
         }
     }
 
